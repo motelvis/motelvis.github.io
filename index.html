@@ -100,3 +100,330 @@
 
         .about p {
             font-size: 17px;
+            color: #4b5563;
+        }
+
+        .about p + p {
+            margin-top: 15px;
+        }
+
+        /* SKILLS */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill {
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 9px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+        }
+
+        /* PROJECTS */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+        }
+
+        .project {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+            transition: transform 0.25s ease, box-shadow 0.25s ease;
+        }
+
+        .project:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.10);
+        }
+
+        .project h3 {
+            font-size: 21px;
+            margin-bottom: 15px;
+            color: #172554;
+        }
+
+        .project p {
+            color: #4b5563;
+            margin-bottom: 20px;
+        }
+
+        .tools {
+            font-size: 14px;
+            color: #2563eb;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .project a {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        .project a:hover {
+            background: #1d4ed8;
+        }
+
+        /* CONTACT */
+        .contact {
+            background: white;
+            padding: 30px;
+            border-radius: 14px;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .contact p {
+            font-size: 17px;
+            color: #4b5563;
+            margin-bottom: 15px;
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .contact-links a {
+            display: inline-block;
+            background: #2563eb;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            border-radius: 7px;
+            font-weight: bold;
+            transition: background 0.2s ease;
+        }
+
+        .contact-links a:hover {
+            background: #1d4ed8;
+        }
+
+        /* FOOTER */
+        footer {
+            background: #172554;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            opacity: 0.85;
+        }
+
+        /* MOBILE */
+        @media (max-width: 600px) {
+
+            header {
+                padding: 60px 20px;
+            }
+
+            header h1 {
+                font-size: 32px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            section h2 {
+                font-size: 24px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <h1>ELVIS MOTARI NYAMWARO</h1>
+        <p>Data Analytics Portfolio</p>
+
+        <div class="subtitle">
+            Healthcare • Disease Surveillance • Data Analytics
+        </div>
+    </header>
+
+
+    <div class="container">
+
+        <!-- ABOUT -->
+        <section>
+            <h2>About Me</h2>
+
+            <div class="about">
+                <p>
+                    Hi, I am Elvis Motari Nyamwaro, a Health Records and
+                    Information Management graduate from Maseno University.
+                    I analyse healthcare and public health data using Python,
+                    SQL, Excel and R, and I am interested in building
+                    data-driven systems for healthcare and other sectors.
+                </p>
+                <p>
+                    This portfolio showcases practical data analytics projects
+                    focused on healthcare and public health. The projects
+                    demonstrate skills in data cleaning, analysis,
+                    visualization, and interpretation using Python, Pandas,
+                    SQL, Excel, and related data analytics technologies.
+                </p>
+            </div>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section>
+            <h2>Tools &amp; Skills</h2>
+
+            <div class="skills">
+
+                <span class="skill">Python</span>
+                <span class="skill">pandas</span>
+                <span class="skill">SQL</span>
+                <span class="skill">Excel</span>
+                <span class="skill">Data Cleaning</span>
+                <span class="skill">Data Analysis</span>
+                <span class="skill">Data Visualization</span>
+                <span class="skill">Healthcare Data</span>
+                <span class="skill">R Programming</span>
+                <span class="skill">Health Information Management</span>
+
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section>
+
+            <h2>Featured Projects</h2>
+
+            <div class="projects">
+
+
+                <!-- DISEASE SURVEILLANCE (existing) -->
+                <div class="project">
+
+                    <h3>🦠 Public Health Disease Surveillance</h3>
+
+                    <p>
+                        Analysis of public health surveillance data to explore
+                        disease patterns, trends, and other important indicators
+                        using Python and data analysis techniques.
+                    </p>
+
+                    <div class="tools">
+                        Python • Pandas • Data Visualization
+                    </div>
+
+                    <a href="https://www.kaggle.com/code/elvismotari/public-health-surveillance"
+                       target="_blank" rel="noopener">
+                        View Project
+                    </a>
+
+                </div>
+
+
+                <!-- PATIENT RECORDS (existing) -->
+                <div class="project">
+
+                    <h3>🏥 Patient Records Analysis</h3>
+
+                    <p>
+                        Analysis of patient records to explore demographic
+                        characteristics, departments, and healthcare-related
+                        patterns using Python and Pandas.
+                    </p>
+
+                    <div class="tools">
+                        Python • Pandas • Healthcare Data
+                    </div>
+
+                    <a href="https://www.kaggle.com/code/elvismotari/patient-records-analysis-using-python"
+                       target="_blank" rel="noopener">
+                        View Project
+                    </a>
+
+                </div>
+
+
+                <!-- DIGITAL HEALTH AFRICA (new) -->
+                <div class="project">
+
+                    <h3>🌍 Digital Health Maturity &amp; EMR/EHR Evidence in Africa</h3>
+
+                    <p>
+                        An Excel-based analysis of digital health maturity
+                        across 32 African countries, combined with published
+                        EMR/EHR evidence. Key finding: in most countries
+                        governance is ahead of workforce capacity, and about
+                        65% of EHR research comes from just Kenya, Ethiopia
+                        and Nigeria.
+                    </p>
+
+                    <div class="tools">
+                        Excel • Data Analysis • Healthcare Data
+                    </div>
+
+                    <a href="https://www.kaggle.com/datasets/elvismotari/digital-health-maturity-across-african-countries"
+                       target="_blank" rel="noopener">
+                        View Project
+                    </a>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CONTACT -->
+        <section>
+            <h2>Contact</h2>
+
+            <div class="contact">
+                <p>
+                    I am open to data analytics and health information
+                    opportunities and collaborations. Get in touch:
+                </p>
+
+                <div class="contact-links">
+                    <a href="mailto:motarielvis@gmail.com">Email Me</a>
+                    <a href="https://www.linkedin.com/in/elvis-motari-a493b824a" target="_blank" rel="noopener">LinkedIn</a>
+                    <a href="https://www.kaggle.com/elvismotari" target="_blank" rel="noopener">Kaggle</a>
+                    <a href="https://github.com/motelvis" target="_blank" rel="noopener">GitHub</a>
+                </div>
+
+                <p style="margin-top: 15px; margin-bottom: 0;">
+                    Email: motarielvis@gmail.com
+                </p>
+            </div>
+        </section>
+
+    </div>
+
+
+    <!-- FOOTER -->
+    <footer>
+
+        <p>
+            © 2026 Elvis Motari Nyamwaro | Data Analytics Portfolio
+        </p>
+
+    </footer>
+
+</body>
+</html>
